@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="English">
+    <head>
+      <meta charset="utf-8">
+    
+      
+      
+      <meta name="viewport" content="width=device-width">
+      
+
+    </head>
+    <style>
+      section{
+        width: 300px;
+        height: 300px;
+        margin: 50px auto;
+        background-color: brown;
+
+
+      }
+    </style>
+    <body>
+    <section>
+
+    </section>
+    <section>
+    </section>
+    <section>
+    </section>
+    <button>chenagecolor</button>
+    </body>
+    <script>
+    const section=document.querySelectorAll("section");
+    const button=document.querySelector("button");
+  
+    button.addEventListener('click',e=>{
+     
+      const color= Math.random().toString(16).slice(2,8);
+      section.forEach(items=>{
+        items.style.backgroundColor= `#${color}`;
+      }); 
+    });
+  
+    </script>
+    
+    </html>
